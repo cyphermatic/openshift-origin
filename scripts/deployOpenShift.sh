@@ -76,7 +76,7 @@ do
   echo "$NODE-$c openshift_node_labels=\"{'region': 'infra', 'zone': 'default'}\" openshift_hostname=$NODE-$c" >> /etc/ansible/hosts
 done
 
-runuser -l $SUDOUSER -c "git clone https://github.com/openshift/openshift-ansible /home/$SUDOUSER/openshift-ansible"
+runuser -l $SUDOUSER -c "git clone https://github.com/cyphermatic/openshift-ansible /home/$SUDOUSER/openshift-ansible"
 
 echo "Executing Ansible playbook"
 
